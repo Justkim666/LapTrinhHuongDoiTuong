@@ -1,0 +1,28 @@
+package ThuVien;
+
+import java.util.Scanner;
+
+public abstract class TaiLieu {
+	private String maTaiLieu;
+	private String tenNSX;
+	private int soBanPhatHanh;
+	
+	public TaiLieu() {
+		maTaiLieu = new String();
+		tenNSX = new String();
+		soBanPhatHanh = 0;
+	}
+	
+	public TaiLieu(TaiLieu tl) {
+		maTaiLieu = new String(tl.maTaiLieu);
+		tenNSX = new String(tl.tenNSX);
+		soBanPhatHanh = tl.soBanPhatHanh;
+	}
+	
+	public void nhap() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhap vao ma tai lieu: "); maTaiLieu = sc.nextLine();
+		System.out.println("Nhap vao ten NSX: "); tenNSX = sc.nextLine();
+		System.out.println("Nhap so ban phat hanh: "); soBanPhatHanh = sc.nextInt();
+	}
+}

@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class QLCB {
+	
+	public static void main(String[] args) {
+		CanBo cb[] = new CanBo[100];	
+		int i = 0;
+		System.out.println("----------------Menu----------------");
+		System.out.println("1. Them can bo moi");
+		System.out.println("2. Tim kiem can bo");
+		System.out.println("3. Hien thi danh sach can bo");
+		System.out.println("4. Thoat");
+		Scanner sc = new Scanner(System.in);
+		int n, check_add = 1, out;
+		do {
+			System.out.println("Chon tac vu muon thuc hien: "); n = sc.nextInt();
+			switch(n) {
+			case 1:
+				int x = 0;
+				do {
+					System.out.println("Ban nhap: (1)Nhan vien / (2)Ky su / (3)Cong nhan"); x = sc.nextInt();
+					if(x == 1) {
+						cb[i] = new NhanVien();
+						cb[i].nhap();
+						check_add = 1;
+						i++;
+					}
+					else if(x == 2) {
+						cb[i] = new KySu();
+						cb[i].nhap();
+						check_add = 1;
+						i++;
+					}
+					else if(x == 3) {
+						cb[i] = new CongNhan();
+						cb[i].nhap();
+						check_add = 1;
+						i++;
+					}
+					else check_add = 0;
+					if(check_add == 0) {
+						System.out.println("Vui long nhap dung gia tri!");
+					}
+				}while(check_add == 0);
+				break;
+			
+			case 2:
+				String s = new String();
+				System.out.println("Nhap vao ten can bo muon tim kiem: "); s = sc.nextLine();
+				for(int j = 0; j < cb.length; j++) {
+					if(cb[j].getHoTen().equals(s)) {
+						cb[j].in();
+					}
+				}
+				break;
+			case 3:
+				System.out.println("Hien thi thong tin ve danh sach can bo");
+				for(int j = 0; j < cb.length; j++) {
+					System.out.println("Can bo thu "+ (i+1));
+					cb[j].in();
+				}
+				break;
+			}
+		}while(n != 4);
+	}
+}

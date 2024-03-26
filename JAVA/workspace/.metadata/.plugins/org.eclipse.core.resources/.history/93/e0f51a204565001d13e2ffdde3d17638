@@ -1,0 +1,7 @@
+
+public class TuyenSinh {
+	public static void main(String[] args) {
+		ThiSinh ts[] = new ThiSinh[100];
+		int length_ts = 0;
+	}
+}

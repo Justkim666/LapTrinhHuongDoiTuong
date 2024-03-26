@@ -1,0 +1,6 @@
+
+public class ShapeApp {
+	public static void main(String[] args) {
+		Shape rect = new Rectangle();
+	}
+}

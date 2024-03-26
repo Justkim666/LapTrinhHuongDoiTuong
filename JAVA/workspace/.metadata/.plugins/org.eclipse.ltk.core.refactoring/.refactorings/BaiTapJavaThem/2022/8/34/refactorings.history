@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;Bai3.B(...).Binary&apos; in &apos;Bai3.B(...)&apos; to field&#x0D;&#x0A;- Original project: &apos;BaiTapJavaThem&apos;&#x0D;&#x0A;- Original element: &apos;Bai3.B(...).Binary&apos;&#x0D;&#x0A;- Field name: &apos;binaries&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;Binary&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;{Bai3.java" name="binaries" selection="259 13" stamp="1660526173592" static="false" version="1.0" visibility="2"/>
+</session>

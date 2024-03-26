@@ -1,0 +1,7 @@
+
+public class Gach {
+	private String maSo, mau;
+	private int sLuong, cdai, cngang;
+	private float gia;
+	
+}

@@ -1,0 +1,12 @@
+
+public class Nguoi {
+	private String hoTen, ngheNghiep, CMND;
+	private int tuoi;
+	
+	public Nguoi() {
+		hoTen = new String();
+		ngheNghiep = new String();
+		CMND = new String();
+		tuoi = 1;
+	}
+}

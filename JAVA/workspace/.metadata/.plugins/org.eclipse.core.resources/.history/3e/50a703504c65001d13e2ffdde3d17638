@@ -1,0 +1,12 @@
+
+public class KhuPho {
+	private HoGiaDinh khuPho[];
+	
+	public KhuPho() {
+		khuPho = new HoGiaDinh[100];
+	}
+	
+	public KhuPho(KhuPho kp) {
+		khuPho = kp.khuPho;
+	}
+}

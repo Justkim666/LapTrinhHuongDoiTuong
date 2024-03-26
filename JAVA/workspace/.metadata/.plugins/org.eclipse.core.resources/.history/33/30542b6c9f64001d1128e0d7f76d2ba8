@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class QLCB {
+	public static void main(String[] args) {
+		System.out.println("----------------Menu----------------");
+		System.out.println("1. Them can bo moi");
+		System.out.println("2. Tim kiem can bo");
+		System.out.println("3. Hien thi danh sach can bo");
+		System.out.println("4. Thoat");
+		Scanner sc = new Scanner(System.in);
+		int n;
+		do {
+			System.out.println("Chon tac vu muon thuc hien: "); n = sc.nextInt();
+		}while(n != 4);
+	}
+}

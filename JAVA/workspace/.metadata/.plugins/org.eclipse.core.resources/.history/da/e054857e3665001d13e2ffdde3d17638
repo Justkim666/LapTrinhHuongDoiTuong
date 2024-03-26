@@ -1,0 +1,11 @@
+package ThuVien;
+
+public class TapChi extends TaiLieu{
+	private int soPhatHanh;
+	private int thangPhatHanh;
+	
+	public TapChi() {
+		super();
+		soPhatHanh = thangPhatHanh = 1;
+	}
+}

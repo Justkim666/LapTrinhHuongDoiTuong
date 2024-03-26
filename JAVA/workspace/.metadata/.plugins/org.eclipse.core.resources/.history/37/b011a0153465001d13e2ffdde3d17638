@@ -1,0 +1,19 @@
+package ThuVien;
+
+public abstract class TaiLieu {
+	private String maTaiLieu;
+	private String tenNSX;
+	private int soBanPhatHanh;
+	
+	public TaiLieu() {
+		maTaiLieu = new String();
+		tenNSX = new String();
+		soBanPhatHanh = 0;
+	}
+	
+	public TaiLieu(TaiLieu tl) {
+		maTaiLieu = new String(tl.maTaiLieu);
+		tenNSX = new String(tl.tenNSX);
+		soBanPhatHanh = tl.soBanPhatHanh;
+	}
+}

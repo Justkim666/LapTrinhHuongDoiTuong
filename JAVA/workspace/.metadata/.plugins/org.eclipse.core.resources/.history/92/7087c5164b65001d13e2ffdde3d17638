@@ -1,0 +1,12 @@
+
+public class HoGiaDinh {
+	private Nguoi gd[];
+	
+	public HoGiaDinh() {
+		gd = new Nguoi[20];
+	}
+	
+	public HoGiaDinh(HoGiaDinh hgd) {
+		gd = hgd.gd;
+	}
+}

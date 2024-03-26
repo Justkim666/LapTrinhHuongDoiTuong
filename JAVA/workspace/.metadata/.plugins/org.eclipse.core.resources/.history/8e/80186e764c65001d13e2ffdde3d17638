@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class HoGiaDinh {
+	private Nguoi gd[];
+	
+	public HoGiaDinh() {
+		gd = new Nguoi[20];
+	}
+	
+	public HoGiaDinh(HoGiaDinh hgd) {
+		gd = hgd.gd;
+	}
+	
+	 public void nhap() {
+		 Scanner sc = new Scanner(System.in);
+		 int n;
+		 System.out.print("Nhap so thanh vien trong gia dinh: "); n = sc.nextInt();
+		 for(int i = 0; i < n; i++) {
+			 gd[i] = new Nguoi();
+			 gd[i].nhap();
+		 }
+	 }
+	 
+	 public void in() {
+		 for(int i = 0; i < gd.length; i++) {
+			 System.out.println("Thanh vien thu "+ (i+1));
+			 gd[i].in();
+			 System.out.println();
+		 }
+	 }
+	 
+	 public String toString() {
+		 String s = new String();
+		 for(int i = 0; i < gd.length; i++) {
+			 s += gd[i].toString();
+		 }
+		 return s;
+	 }
+}

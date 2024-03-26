@@ -1,0 +1,23 @@
+package BaiTap2;
+
+import java.util.Scanner;
+
+public class DoanThang {
+	private Diem d1, d2;
+	
+	public DoanThang() {
+		d1 = new Diem();
+		d2 = new Diem();
+	}
+	
+	public DoanThang(DoanThang t) {
+		d1 = new Diem(t.d1);
+		d2 = new Diem(t.d2);
+	}
+	
+	public void nhap() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhap vao diem d1"); d1.nhapDiem();
+		System.out.println("Nhap vao diem d2"); d2.nhapDiem();
+	}
+}

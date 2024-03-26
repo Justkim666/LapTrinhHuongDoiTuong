@@ -1,0 +1,9 @@
+package BaiTap1;
+
+public class SDGach {
+	public static void main(String[] args) {
+		Gach g = new Gach();
+		g.nhap();
+		g.in();
+	}
+}

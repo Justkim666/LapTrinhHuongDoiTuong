@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Bai6"/>
+    <fullyQualifiedTypeName name="PhanSo"/>
+    <fullyQualifiedTypeName name="DoanThang"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="buoi2.Date"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction"/>
+    <fullyQualifiedTypeName name="buoi2.Diem"/>
+    <fullyQualifiedTypeName name="buoi3.SDSinhVien"/>
+    <fullyQualifiedTypeName name="buoi3.SinhVien"/>
+    <fullyQualifiedTypeName name="buoi4.ConVat"/>
+    <fullyQualifiedTypeName name="buoi5.MyDate"/>
+    <fullyQualifiedTypeName name="buoi5.KhachHang"/>
+    <fullyQualifiedTypeName name="buoi5.KhachHangVIP"/>
+    <fullyQualifiedTypeName name="HoGiaDinh"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class QLCB {
+	
+	public static void main(String[] args) {
+		CanBo cb[] = new CanBo[100];	
+		int i = 0;
+		System.out.println("----------------Menu----------------");
+		System.out.println("1. Them can bo moi");
+		System.out.println("2. Tim kiem can bo");
+		System.out.println("3. Hien thi danh sach can bo");
+		System.out.println("4. Thoat");
+		Scanner sc = new Scanner(System.in);
+		int n, check_add = 1;
+		do {
+			System.out.println("Chon tac vu muon thuc hien: "); n = sc.nextInt();
+			switch(n) {
+			case 1:
+				int x = 0;
+				do {
+					System.out.println("Ban nhap: (1)Nhan vien / (2)Ky su / (3)Cong nhan"); x = sc.nextInt();
+					if(x == 1) {
+						cb[i] = new NhanVien();
+						cb[i].nhap();
+						check_add = 1;
+						i++;
+					}
+					else if(x == 2) {
+						cb[i] = new KySu();
+						cb[i].nhap();
+						check_add = 1;
+						i++;
+					}
+					else if(x == 3) {
+						cb[i] = new CongNhan();
+						cb[i].nhap();
+						check_add = 1;
+						i++;
+					}
+					else check_add = 0;
+					if(check_add == 0) {
+						System.out.println("Vui long nhap dung gia tri!");
+					}
+				}while(check_add == 0);
+			
+			case 2:
+				
+			}
+		}while(n != 4);
+	}
+}

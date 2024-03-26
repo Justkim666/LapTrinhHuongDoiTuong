@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Gach {
+	private String maSo, mau;
+	private int sLuong, cdai, cngang;
+	private float gia;
+	
+	public Gach() {
+		maSo = new String();
+		mau = new String();
+		sLuong = cdai = cngang = 0;
+		gia = 0.0f;
+	}
+	
+	public Gach(Gach g) {
+		maSo = new String(g.maSo);
+		mau = new String(g.mau);
+		sLuong = g.sLuong;
+		cdai = g.cdai;
+		cngang = g.cngang;
+		gia = g.gia;
+	}
+	
+	public void nhap() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Nhap vao ma so gach: "); maSo = sc.nextLine();
+		System.out.print("Nhap vao mau gach: "); mau = sc.nextLine();
+	}
+}

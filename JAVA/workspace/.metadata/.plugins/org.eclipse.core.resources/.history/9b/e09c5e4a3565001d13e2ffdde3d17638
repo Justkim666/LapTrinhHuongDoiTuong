@@ -1,0 +1,12 @@
+package ThuVien;
+
+public class Sach extends TaiLieu{
+	private String tenTG;
+	private int soTrang;
+	
+	public Sach() {
+		super();
+		tenTG = new String();
+		soTrang = 0;
+	}
+}

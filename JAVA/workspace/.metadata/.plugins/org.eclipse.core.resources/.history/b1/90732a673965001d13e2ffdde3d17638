@@ -1,0 +1,21 @@
+package ThuVien;
+
+import java.util.Scanner;
+
+public class QuanLySach {
+	public static void main(String[] args) {
+		TaiLieu tl[] = new TaiLieu[100];
+		System.out.println("---------------Menu---------------");
+		System.out.println("1. Them moi tai lieu");
+		System.out.println("2. Xoa tai lieu");
+		System.out.println("3. Hien thi thong tin tai lieu");
+		System.out.println("4. Tim kiem tai lieu");
+		System.out.println("0. Thoat");
+		System.out.println("----------------------------------");
+		Scanner sc = new Scanner(System.in);
+		int n = 1;
+		do {
+			System.out.print("Nhap tac vu muon thuc hien: "); n = sc.nextInt();
+		}while(n == 0);
+	}
+}
